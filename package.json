@@ -1,0 +1,26 @@
+{
+  "name": "express-starter",
+  "description": "Starting express app.",
+  "tags": ["git","node","express","coffeescript"],
+  "version": "0.1.0",
+  "author": "Brian Morgan <brian.s.morgan@gmail.com>",
+  "engines": ["node >= 0.10.0"],
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "nunjucks": "*",
+    "less-middleware": "*",
+    "connect-flash": "*",
+    "connect-mongo": "*",
+    "async": "*",
+    "coffee-script": "*",
+    "connect-coffee-script": "*",
+    "underscore": "~1.4.4",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-google": "*",
+    "underscore": "*",
+    "humanize": "*",
+    "markdown": "*"
+  }
+}

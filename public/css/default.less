@@ -1,0 +1,222 @@
+body {
+    background-color:white;
+    padding-bottom:20px;
+}
+
+@media (min-width: 979px) {
+    body {
+        padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+    }
+}
+
+.flash-container {
+  background-color: white;
+  .alert {
+    .msg {}
+    .num {
+      font-weight: bold;
+    }
+  }
+}
+
+.control-group .form-element {
+    margin-bottom: 10px;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+#locations .nav li {
+    a {
+        padding-left:5px;
+    }
+    .distance {
+         color:black;
+         font-size:12px;
+    }
+
+    span.img {
+        text-align:center;
+        vertical-align:middle;
+        display:table-cell;
+        img.icon {
+            max-height:25px;
+        }
+        height:40px;
+        width:50px;
+    }
+    span.details {
+        padding-left:5px;
+        display:table-cell;
+        height:40px;
+        vertical-align:middle;
+    }
+}
+
+.jumbotron {
+  position: relative;
+  padding: 20px 0;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  background: #020031; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #020031 0%, #6d3353 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #020031 0%,#6d3353 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+  margin-bottom:20px;
+}
+
+.jumbotron h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+/* Link styles (used on .masthead-links as well) */
+.jumbotron a {
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.jumbotron a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    margin-top: -20px; /* Offset bottom margin on .navbar */
+  }
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    padding: 10px 20px;
+    margin-top:   -20px; /* Offset bottom margin on .navbar */
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0;
+  }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block;
+  }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 25px;
+  }
+  .jumbotron p {
+    font-size: 14px;
+  }
+
+  /* Do our best to make tables work in narrow viewports */
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Examples: modal */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+.location-view {
+    .jumbotron {
+        img {
+            float:left;
+        }
+        h1 {
+            padding-left:10px;
+            display:table-cell;
+            vertical-align:middle;
+            height:71px;
+        }
+    }
+
+    .edit.btn, .delete.btn {
+        float:right;
+        margin-left:5px;
+    }
+
+    .information {
+        padding:0 15px;
+    }
+
+    .photos {
+        line-height:90px;
+        height:90px;
+        overflow:hidden;
+        margin-bottom:15px;
+        text-align:center;
+        .img {
+            display:inline-block;
+            height:85px;
+            padding-bottom:5px;
+            padding-right:5px;
+            img {
+                max-width:75px;
+                max-height:75px;
+            }
+        }
+    }
+}
+
+.filters {
+    text-align:center;
+    .filter {
+        display:inline-block;
+        text-align:center;
+        color:black;
+        font-weight:bold;
+        padding:2px;
+        img {
+            width:30px;
+            height:30px;
+        }
+    }
+}
