@@ -98,6 +98,7 @@ exports.configure = (app, skin) ->
     }))
 
     app.use('/static', express.static(path.join(skin, 'public')))
+    app.use('/static', express.static(path.join(skin, 'bower_components')))
     app.use('/static', express.static(path.join(skin, 'compiled')))
 
     app.use('/slow', express.timeout(1))  # per section timeouts!
